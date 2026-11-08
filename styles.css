@@ -1,0 +1,136 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+    color: #2b2b2b;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+
+header {
+    background-color: red;
+    color:whitesmoke;
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+header h1 {
+    margin: 0 0 0.5rem;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 0.5rem 0;
+}
+
+main {
+    max-width: 700px;
+    margin: 1.5rem auto;
+    padding: 0 1rem;
+}
+
+fieldset {
+    border: 2px solid #e0d5c8;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+legend {
+    font-weight: bold;
+    color: red;
+    padding: 0 0.5rem;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0 0.25rem;
+    font-weight: bold;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.menu-item {
+    margin-bottom: 0.75rem;
+}
+
+.menu-item label {
+    display: inline;
+    font-weight: normal;
+    margin-left: 0.4rem;
+}
+
+.desc {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-top: 0.5rem;
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+    display: inline;
+    font-weight: normal;
+}
+
+button {
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.6rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
+
+button[type="submit"] {
+    background-color:red;
+    color: #fff;
+}
+
+button[type="reset"] {
+    background-color: transparent;
+    color: red;
+    border: 2px solid red;
+}
+
+/* ===== Focus states ===== */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: 3px solid #f4a742;
+    outline-offset: 2px;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    button {
+        display: block;
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+}

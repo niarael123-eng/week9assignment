@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salvadoreño Food Truck — Order Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1><em>Salvadoreño Food Truck!</em></h1>
+        <img src="images/salvadortruck.jpg" alt="Salvadoreño Food Truck">
+        <p>Mexican Cuisine Served Fresh!<br>Pickup Only!!<br> 1135 Spring Garden St, Philadelphia, PA 19123<br> Open 7 days a week<br>10am-8pm</p>
+    </header>
+
+    <main>
+        <h2>Online Order Form</h2>
+        <p>Fill out the form below to pick up your order.</p>
+
+        <form action="" method="post">
+
+            <fieldset>
+                <legend>Customer Information</legend>
+
+                <label for="name">Customer Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="text" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Our Menu</legend>
+
+                <div class="menu-item">
+                    <input type="checkbox" id="item1" name="items" value="[ITEM 1]">
+                    <label for="item1">Chicken Burrito — $10.00<br><span class="desc">One large chicken burrito filled with beans, rice, lettuce, tomato, and pico de gallo. Served with choice of chips and sauces on side.</span></label>
+                </div>
+
+                <div class="menu-item">
+                    <input type="checkbox" id="item2" name="items" value="[ITEM 2]">
+                    <label for="item2">Beef Burrito — $11.00<br><span class="desc">One large beef burrito filled with beans, rice, lettuce, tomato, and pico de gallo. Served with choice of chips and sauces on side.</span></label>
+                </div>
+
+                <div class="menu-item">
+                    <input type="checkbox" id="item3" name="items" value="[ITEM 3]">
+                    <label for="item3">Chicken Tacos — $8.00<br><span class="desc">3 chicken tacos filled with lettuce, tomato, pico de gallo, sauces served on side. Served with choice of side of chips.</span></label>
+                </div>
+
+                <div class="menu-item">
+                    <input type="checkbox" id="item4" name="items" value="[ITEM 4]">
+                    <label for="item4">Beef Tacos — $9.00<br><span class="desc">3 beef tacos filled with lettuce, tomato, pico de gallo, sauces served on side. Served with choice of side of chips.</span></label>
+                </div>
+
+                <div class="menu-item">
+                    <input type="checkbox" id="item5" name="items" value="[ITEM 5]">
+                    <label for="item5">Vegan Quesadilla — $12.00<br><span class="desc">One large vegan queadilla filled with grilled tofu, lettuce, melted vegan cheese, tomato, and pico de gallo. Served with choice of  side of chips and guacamole.</span></label>
+                </div>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Order Customization</legend>
+
+                <p>Chips and Sauces Included?</p>
+                <input type="radio" id="yes" name="include" value="yes" checked>
+                <label for="yes">Yes</label>
+
+                <input type="radio" id="no" name="include" value="no">
+                <label for="large">No</label>
+
+
+                <p>Extras:</p>
+                <input type="checkbox" id="extra1" name="extras" value="guacamole">
+                <label for="extra1">Extra Guacamole</label>
+
+                <input type="checkbox" id="extra2" name="extras" value="sourcream">
+                <label for="extra2">Extra Sour Cream</label>
+
+                <input type="checkbox" id="extra3" name="extras" value="greenredsauce">
+                <label for="extra3">Extra Green & Red Sauce</label>
+
+                <label for="drink">Drink Selection:</label>
+                <select id="drink" name="drink">
+                    <option value="">-- Select a drink --</option>
+                    <option value="[DRINK 1]">Pepsi</option>
+                    <option value="[DRINK 2]">Water</option>
+                    <option value="[DRINK 3]">Ginger Ale</option>
+                    <option value="[DRINK 4]">Sweet Tea</option>
+                </select>
+
+                <label for="instructions">Special Instructions:</label>
+                <textarea id="instructions" name="instructions" rows="3"></textarea>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Pickup Information</legend>
+
+                <label for="pickup-date">Preferred Pickup Date/Time:</label>
+                <input type="text" id="pickup-date" name="pickup-date" placeholder="ex; Tuesday 8:30pm">
+
+                <label for="pickup-name">Pickup Name (if different from customer name above):</label>
+                <input type="text" id="pickup-name" name="pickup-name">
+
+                <label for="pickup-notes">Additional Pickup Instructions:</label>
+                <textarea id="pickup-notes" name="pickup-notes" rows="2"></textarea>
+            </fieldset>
+
+
+            <button type="submit">Submit Order</button>
+            <button type="reset">Reset Form</button>
+
+        </form>
+    </main>
+
+</body>
+</html>
